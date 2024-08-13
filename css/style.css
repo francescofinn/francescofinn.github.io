@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+:root {
+    --primary-color: #CD071E;
+}
+
 body {
     font-family: 'Noto Serif', 'Noto Sans';
     font-size: 16px;
@@ -40,17 +44,10 @@ img {
     margin-right: 10px;
 }
 
-.navbar .logo h2 {
-    font-size: 24px;
-    margin: 0;
-    color: #333;
-    font-weight: 700;
-}
-
 .navbar .container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
 
 .navbar .main-menu ul {
@@ -58,14 +55,15 @@ img {
 }
 
 .navbar ul li a {
-    padding: 10px 20px;
+    padding: 20px 20px;
     display: block;
     font-weight: 600;
     transition: 0.5s;
+    font-size: 20px;
 }
 
 .navbar ul li a:hover {
-    color: #CD071E
+    color: var(--primary-color);
 }
 
 /* Utility Classes */
