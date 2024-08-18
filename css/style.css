@@ -107,7 +107,8 @@ img {
     }
 
     .navbar .logo img {
-        height: 120px;
+        height: auto;
+        width: auto;
         /* Adjust logo size for mobile */
     }
 }
