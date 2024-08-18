@@ -32,7 +32,7 @@ img {
 
 .navbar {
     background: #fff;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 .navbar .logo {
@@ -107,7 +107,7 @@ img {
     }
 
     .navbar .logo img {
-        height: 100px;
+        height: 120px;
         /* Adjust logo size for mobile */
     }
 }
