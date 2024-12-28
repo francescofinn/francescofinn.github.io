@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Restaurant Dragon</title>
+    <title>Contact Us - Restaurant Dragon</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -36,32 +36,28 @@
         </div>
     </nav>
 
-    <section class="about-us-section">
+    <section id="contact" class="contact-section">
         <div class="container">
-            <h1>About Us</h1>
-            <br>
-            <p>
-                Welcome to Restaurant Dragon! We are dedicated to providing a unique dining experience that combines 
-                authentic flavors, exceptional service, and a warm, inviting atmosphere. Our chefs take pride in crafting 
-                dishes that celebrate culinary traditions from around the world, using the finest ingredients to ensure 
-                every bite is unforgettable.
-            </p>
-            <p>
-                Whether you're here for a casual meal, a special occasion, or simply to enjoy good food, we are here to 
-                make your experience memorable.
-            </p>
+            <h1 class="section-title">Contact Us</h1>
+            <div class="contact-info">
+                <p><i class="fa fa-map-marker"></i> 123 Main Street, Zurich, Switzerland</p>
+                <p><i class="fa fa-phone"></i> +41 123 456 789</p>
+                <p><i class="fa fa-envelope"></i> contact@restaurantdragon.com</p>
+            </div>
+            <form class="contact-form" action="#" method="post">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
         </div>
     </section>
 
     <footer class="footer">
         <div class="container">
             <p>&copy; 2024 Restaurant Dragon. All Rights Reserved.</p>
-            <div class="contact-link">
-                <a href="contact.html">Contact Us</a>
-            </div>
         </div>
     </footer>
-    
 </body>
 
 </html>

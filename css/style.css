@@ -13,6 +13,13 @@ body {
     font-size: 16px;
     line-height: 1.5;
     background: #fff;
+    display: flex;
+    flex-direction: column; 
+    height: 100%;
+}
+
+html {
+    height: 100%; /* Ensure consistent height for the page */
 }
 
 a {
@@ -33,6 +40,7 @@ img {
 .navbar {
     background: #fff;
     padding: 20px 0;
+    border-bottom: 2px solid #000;
 }
 
 .navbar .logo {
@@ -68,9 +76,12 @@ img {
 
 /* Home */
 .home-section {
-    position: relative;
-    padding: 60px 0;
-    height: 100vh; 
+    flex: 1; /* This makes the home section grow to take up remaining space */
+    padding: 60px 20px; /* Optional padding for spacing */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .home-title {
@@ -81,7 +92,7 @@ img {
 }
 
 .home-section p {
-    position: absolute;
+    position: relative;
     top: 35%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
@@ -93,10 +104,35 @@ img {
     margin: 0 auto;
 }
 
+footer.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 20px 0;
+    position: relative; 
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+footer.footer a {
+    color: #fff;
+    text-align: right;
+    padding: 20px 0;
+    position: relative; 
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
 
 /* About Us */
 .about-us-section {
-    padding: 60px 0;
+    flex: 1; 
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
     background-color: #f9f9f9;
 }
 
@@ -116,6 +152,53 @@ img {
     margin-left: auto;
     margin-right: auto;
     text-align: left;
+}
+
+/* Contact Section */
+.contact-section {
+    flex: 1; 
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #f9f9f9;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background: #b00616;
 }
 
 
@@ -205,7 +288,7 @@ img {
 @media (max-width: 768px) {
     .navbar .container {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     .navbar .main-menu ul {
